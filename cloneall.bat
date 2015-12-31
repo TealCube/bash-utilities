@@ -1,4 +1,6 @@
 @ECHO OFF
+set currentdir=%cd%
+cd ..
 git clone https://github.com/Nunnery/bukkit-plugin-parent.git
 git clone https://github.com/TealCube/config.git
 git clone https://github.com/TealCube/hilt.git
@@ -20,3 +22,4 @@ git clone https://github.com/TealCube/tribes.git
 git clone https://github.com/TealCube/bullion.git
 git clone https://github.com/TealCube/highnoon.git
 git clone https://github.com/TealCube/bolt.git
+cd %currentdir%
